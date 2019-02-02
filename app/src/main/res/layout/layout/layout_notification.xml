@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/notification_bar_gradient"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingTop="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:text="Loading Title"
+                android:textColor="@color/colorAccent34"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/authur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:text="Loading Authur"
+                android:textColor="@color/colorAccent34"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="3dp"
+
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/expand_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_expand2" />
+
+            <ImageView
+                android:id="@+id/previous_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@mipmap/icon_previous" />
+
+            <ImageView
+                android:id="@+id/pause_play_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@mipmap/icon_pause" />
+
+            <ImageView
+                android:id="@+id/next_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@mipmap/icon_next" />
+
+            <ImageView
+                android:id="@+id/stop_ghostmode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_exitdoor2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="end"
+        android:src="@mipmap/logo_app2"
+        android:layout_width="0dp"
+
+        android:layout_weight="0.6"
+        android:alpha=".5"
+        android:layout_height="fill_parent" />
+
+
+</LinearLayout>

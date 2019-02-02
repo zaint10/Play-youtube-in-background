@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+
+
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/ll_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="49dp">
+
+                <ViewStub
+                    android:id="@+id/view_stub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout="@layout/content_main_webview" />
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/ll_webview"
+            android:background="@color/colorPrimaryDark2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+
+                android:id="@+id/btn_ghostmode"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="#00000000"
+                android:contentDescription="@string/desc_ghost_btn"
+                android:src="@mipmap/ghost_icon" />
+            <ImageButton
+
+                android:id="@+id/btn_exit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="#00000000"
+                android:contentDescription="@string/desc_exit_btn"
+                android:src="@mipmap/exit_icon_3" />
+
+            <ImageButton
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:contentDescription="@string/desc_navbtn"
+                android:src="@mipmap/icon_menu2" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:name="com.android.support:design:28.0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_nav_header"
+        app:itemIconTint="#d20b0d"
+        app:itemTextColor="#333"
+        app:menu="@menu/navigation_items" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_view_category_1">Support Me</string>
+    <string name="navigation_view_item_1">GitHub</string>
+    <string name="navigation_item_2">About</string>
+    <string name="desc_app">Listen On the Go</string>
+    <string name="desc_navbtn">Navigation Button</string>
+    <string name="firsttime">AppFirstTime Open</string>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_view_category_1"
+
+        android:title="@string/navigation_view_category_1">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_1"
+                android:checked="true"
+                android:icon="@mipmap/logo_github"
+                app:showAsAction="ifRoom"
+                android:title="@string/navigation_view_item_1" />
+        </menu>
+    </item>
+    <item android:id="@+id/navigation_item_2"
+        android:title="@string/navigation_item_2">
+
+
+    </item>
+
+
+</menu>
