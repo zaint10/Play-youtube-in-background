@@ -13,8 +13,7 @@ Backkk provides mechanisms for searching videos and playlists on YT, as well as 
 This repository contains a code intended to demonstrate the capabilities of the Android Webview and how it can be use with a floating window that overlays on top of oher apps. It is not intended to be used as-is in applications as a library dependency, and will not be maintained as such.
 
 
-<img src="Images/Screenshot1.jpg" width=50% height=30%>
-<img src="Images/Screenshot2.jpg" width=50% height=30%>
+<img src="Images/Screenshot1.jpg" width=50% height=30%> <img src="Images/Screenshot2.jpg" width=50% height=30%>
 <img src="Images/Screenshot3.jpg" width=50% height=30%>
 <img src="Images/Screenshot4.jpg" width=50% height=30%>
 
